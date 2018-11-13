@@ -34,7 +34,7 @@ search search ms17_010 /漏洞模块路径查询，搜索到了 4 个相关的�
 
 ## 可以试试以下操作，或者help
 `getuid，sysinfo` /查看系统信息 \
-`webcam_list` /看看被控制的电脑有没有摄像头,如果有用webcam_stream命令可以打开摄像头监控 \
+`webcam_list` /看看被控制的电脑有没有摄像头,如果有用`webcam_stream`命令可以打开摄像头监控 \
 `route` /查看路由表 \
 `screenshot` /桌面截图，很卡 \
 `shell` /打开命令行，然后可以ipconfig/whoami/net user \
